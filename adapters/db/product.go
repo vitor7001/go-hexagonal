@@ -45,8 +45,8 @@ func (p *ProductDb) Save(product application.ProductInterface) (application.Prod
 			return nil, err
 		}
 	} else {
- 		_, err := p.update((product)
- 		if err != nil {
+		_, err := p.update(product)
+		if err != nil {
 			return nil, err
 		}
 	}
